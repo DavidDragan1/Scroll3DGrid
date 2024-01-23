@@ -62,8 +62,8 @@ const applyAnimation = (grid, animationType) => {
 			const gridObj = getGrid(gridItems);
 
 			timeline
-			.set(gridWrap, {rotationX: 30, rotationY: 50})
-			.to(gridWrap, {rotationY: 80})
+			.set(gridWrap, {rotationX: -50, rotationY: 310})
+			
 			.to(gridObj.rows('even'), {
 				xPercent: -100,
 				ease: 'power1'
