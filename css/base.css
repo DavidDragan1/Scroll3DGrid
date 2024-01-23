@@ -298,6 +298,21 @@ body #cdawrap {
 	font-size: clamp(1.5rem, 15vw, 6.5rem);
 }
 
+.content__subtitle {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 50%;
+	left: 50%;
+	margin: -50vh 0 0 -50vw;
+	padding: 0 10vw;
+	display: grid;
+	place-items: left;
+	text-align: left;
+	font-weight: 60;
+	font-size: clamp(1.5rem, 15vw, 6.5rem);
+}
+
 .content__title--top {
 	align-items: start;
 }
