@@ -56,7 +56,7 @@ const applyAnimation = (grid, animationType) => {
 			grid.style.setProperty('--grid-columns', '10');
 			grid.style.setProperty('--grid-gap', '0');
 			grid.style.setProperty('--gridWrap, {rotationX: 50}');
-			grid.style.setProperty('--gridWrap, {rotationy: 80}');
+			grid.style.setProperty('--gridWrap, {rotationY: 80}');
 
 			
 			const gridObj = getGrid(gridItems);
