@@ -61,9 +61,9 @@ const applyAnimation = (grid, animationType) => {
 			
 			const gridObj = getGrid(gridItems);
 
-			// timeline
-			// .set(gridWrap, {rotationX: 50})
-			// .to(gridWrap, {rotationX: 30})
+			timeline
+			.set(gridWrap, {rotationX: 140, rotationY: 50})
+			.to(gridWrap, {rotationY: 80})
 
 			break;
 	  	
