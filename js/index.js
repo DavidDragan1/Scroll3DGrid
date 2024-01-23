@@ -53,36 +53,15 @@ const applyAnimation = (grid, animationType) => {
 			// Set some CSS related style values
 			grid.style.setProperty('--perspective', '2500px');
 			grid.style.setProperty('--grid-width', '100%');
-			grid.style.setProperty('--grid-columns', '8');
+			grid.style.setProperty('--grid-columns', '4');
 			grid.style.setProperty('--grid-gap', '0');
 			
 			const gridObj = getGrid(gridItems);
 
 			timeline
-			.set(gridWrap, {
-				rotationX: 50
-			})
-			.to(gridWrap, {
-				rotationX: 30
-			})
-			.fromTo(gridItems, {
-				filter: 'brightness(0%)'
-			}, {
-				filter: 'brightness(100%)'
-			}, 0)
-			.to(gridObj.rows('even'), {
-				xPercent: -100,
-				ease: 'power1'
-			}, 0)
-			.to(gridObj.rows('odd'), {
-				xPercent: 100,
-				ease: 'power1'
-			}, 0)
-			.addLabel('rowsEnd', '>-=0.15')
-			.to(gridItems, {
-				ease: 'power1',
-				yPercent: () => gsap.utils.random(-100, 200),
-			}, 'rowsEnd');
+			.set(gridWrap, {rotationX: 50})
+			.to(gridWrap, {rotationX: 30})
+
 			break;
 	  	
 		default:
