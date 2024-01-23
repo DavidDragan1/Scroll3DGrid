@@ -73,9 +73,7 @@ const applyAnimation = (grid, animationType) => {
 				ease: 'power1'
 			}, 0)
 			.addLabel('rowsEnd', '>-=0.15')
-			.to(gridItems, {
-				ease: 'power1',
-			}, 'rowsEnd');
+			
 
 			break;
 	  	
