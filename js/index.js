@@ -52,7 +52,7 @@ const applyAnimation = (grid, animationType) => {
 
 			// Set some CSS related style values
 			grid.style.setProperty('--perspective', '1000px');
-			grid.style.setProperty('--grid-inner-scale', '0.5');
+			grid.style.setProperty('--grid-inner-scale', '1');
 
 			timeline
 			.set(gridWrap, {
@@ -193,7 +193,8 @@ const applyAnimation = (grid, animationType) => {
 		case 'type5':
 
 			// Set some CSS related style values
-			grid.style.setProperty('--grid-width', '120%');
+			grid.style.setProperty('--perspective', '2500px');
+			grid.style.setProperty('--grid-width', '100%');
 			grid.style.setProperty('--grid-columns', '8');
 			grid.style.setProperty('--grid-gap', '0');
 			
