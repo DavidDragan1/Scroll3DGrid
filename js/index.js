@@ -53,14 +53,15 @@ const applyAnimation = (grid, animationType) => {
 			// Set some CSS related style values
 			grid.style.setProperty('--perspective', '2500px');
 			grid.style.setProperty('--grid-width', '100%');
-			grid.style.setProperty('--grid-columns', '4');
+			grid.style.setProperty('--grid-columns', '15');
 			grid.style.setProperty('--grid-gap', '0');
+			grid.style.setProperty('--rotationX', '50');
 			
 			const gridObj = getGrid(gridItems);
 
-			timeline
-			.set(gridWrap, {rotationX: 50})
-			.to(gridWrap, {rotationX: 30})
+			// timeline
+			// .set(gridWrap, {rotationX: 50})
+			// .to(gridWrap, {rotationX: 30})
 
 			break;
 	  	
