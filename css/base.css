@@ -305,12 +305,12 @@ body #cdawrap {
 	top: 50%;
 	left: 50%;
 	margin: -50vh 0 0 -50vw;
-	padding: 0 10vw;
+	padding: 50vh 10vw;
 	display: grid;
 	place-items: left;
 	text-align: left;
 	font-weight: 60;
-	font-size: clamp(1.5rem, 15vw, 6.5rem);
+	font-size: clamp(0.5rem, 5vw, 2rem);
 }
 
 .content__title--top {
