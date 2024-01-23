@@ -65,14 +65,14 @@ const applyAnimation = (grid, animationType) => {
 			.set(gridWrap, {rotationX: -50, rotationY: 310})
 			
 			.to(gridObj.rows('even'), {
-				xPercent: -1000,
+				xPercent: -50,
 				ease: 'power1'
 			}, 0)
 			.to(gridObj.rows('odd'), {
-				xPercent: 1000,
+				xPercent: 50,
 				ease: 'power1'
 			}, 0)
-			.addLabel('rowsEnd', '>-=5')
+			.addLabel('rowsEnd', '>-=0.15')
 			.to(gridItems, {
 				ease: 'power1',
 			}, 'rowsEnd');
