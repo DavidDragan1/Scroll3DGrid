@@ -51,8 +51,8 @@ const applyAnimation = (grid, animationType) => {
 		case 'type5':
 
 			// Set some CSS related style values
-			grid.style.setProperty('--perspective', '5000px');
-			grid.style.setProperty('--grid-width', '250%');
+			grid.style.setProperty('--perspective', '500px');
+			grid.style.setProperty('--grid-width', '500%');
 			grid.style.setProperty('--grid-columns', '15');
 			grid.style.setProperty('--grid-gap', '0.2');
 			
