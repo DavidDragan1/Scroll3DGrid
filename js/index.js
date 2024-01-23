@@ -51,8 +51,8 @@ const applyAnimation = (grid, animationType) => {
 		case 'type5':
 
 			// Set some CSS related style values
-			grid.style.setProperty('--perspective', '500px');
-			grid.style.setProperty('--grid-width', '500%');
+			grid.style.setProperty('--perspective', '2500px');
+			grid.style.setProperty('--grid-width', '400%');
 			grid.style.setProperty('--grid-columns', '15');
 			grid.style.setProperty('--grid-gap', '0.2');
 			
@@ -60,7 +60,7 @@ const applyAnimation = (grid, animationType) => {
 			const gridObj = getGrid(gridItems);
 
 			timeline
-			.set(gridWrap, {rotationX: 65, rotationY: 320, rotationZ: 8})
+			.set(gridWrap, {rotationX: 65, rotationY: 320, rotationZ: 4})
 			
 			.to(gridObj.rows('even'), {
 				xPercent: -200,
