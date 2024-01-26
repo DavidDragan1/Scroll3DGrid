@@ -314,6 +314,13 @@ body #cdawrap {
 	list-style-type: none;
 }
 
+.content__subtitle {
+	text-align: left;
+	font-weight: 60;
+	font-size: clamp(0.5rem, 5vw, 2rem);
+	list-style-type: none;
+}
+
 .content__title--top {
 	align-items: start;
 }
